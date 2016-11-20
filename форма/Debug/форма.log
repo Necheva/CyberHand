@@ -1,0 +1,5 @@
+﻿  MyForm.cpp
+  MyForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+TModel.obj : error LNK2028: ёё√ыър эр эхЁрчЁх°хээє■ ыхъёхьє (0A0004FD) "public: __thiscall TMatrix::~TMatrix(void)" (??1TMatrix@@$$FQAE@XZ) т ЇєэъЎшш "public: __thiscall TModel::TModel(void)" (??0TModel@@$$FQAE@XZ)
+TModel.obj : error LNK2019: ёё√ыър эр эхЁрчЁх°хээ√щ тэх°эшщ ёшьтюы "public: __thiscall TMatrix::~TMatrix(void)" (??1TMatrix@@$$FQAE@XZ) т ЇєэъЎшш "public: __thiscall TModel::TModel(void)" (??0TModel@@$$FQAE@XZ)
+C:\Users\щ\Desktop\тё╕\Visual Studio\ьрэшяєы ЄюЁ\Debug\ЇюЁьр.exe : fatal error LNK1120: эхЁрчЁх°хээ√ї тэх°эшї ¤ыхьхэЄют: 2
