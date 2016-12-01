@@ -1,7 +1,7 @@
 #pragma once
 #include"TMatrix.h"
 #include"TVector.h"
-
+#include<string.h>
 enum PairType {ROT,SHAR,MOVE,CATCH};
 enum Orientation{X,MX,Y,MY,EE};
 
@@ -45,10 +45,36 @@ public:
 	{
 		B.Set(i, j, L);
 	}
+
 	TMatrix& GetB()
 	{
  		return B;
 	}
+
+	void SaveToFile(FILE * out)
+	{
+		fprintf(out, TypeNames[Type]);
+		fprintf(out," %lf \n", L);
+		B.SaveToFile(out);
+	}
+
+	void ReadFromFile(FILE *in)
+	{
+		char Buff[8];
+		fscanf(in, "%s", Buff);
+		for (int i = 0; i < 4; i++)
+		{
+			if (strcmp(Buff, TypeNames[i]) == 0)
+			{
+				Type = (PairType)i;
+				break;
+			}
+		}
+		fscanf(in, "%lf \n", &L);
+		B.ReadFromFile(in);
+	}
+	
+
 
 };
 

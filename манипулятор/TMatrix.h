@@ -1,6 +1,7 @@
 #pragma once
 #include<math.h>
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 
 #include"TVector.h"
@@ -10,7 +11,7 @@ class TMatrix
 	static const int N = 4;// у всех объектов данного класса он единственный
 	double Matrix[N][N];
 public:
-	TMatrix(int Q=0)//параметр, который мы будем задавать. Если Q==1, то марица единичная
+	TMatrix(int E=0)//параметр, который мы будем задавать. Если Q==1, то марица единичная
 	{
 		for (int i = 0; i < N; i++)
 		{
@@ -19,17 +20,19 @@ public:
 				Matrix[i][j] = 0;
 			}
 		}
-		if (Q == 1)
+		if (E == 1)
 			for (int i = 0; i < N; i++)
 			{
 				Matrix[i][i] = 1;
 			}
 	};
 	~TMatrix();
+
 	void Set(int i, int j, double Value)// будем устанавливать значение при помощи value
 	{
 		Matrix[i][j] = Value;
 	};
+
 	void Print()
 	{
 		for (int i = 0; i < N; i++)
@@ -114,6 +117,29 @@ public:
 		Res.Set(1, 0, sin(q));
 		Res.Set(1, 1, cos(q));
 		return Res;
+	}
+	void SaveToFile(FILE * out)
+	{
+		for (int i = 0; i < N; i++)
+		{
+			for (int j = 0; j < N; j++)
+			{
+				fprintf(out,"%lf ", Matrix[i][j]);
+			}
+			fprintf(out, "\n");
+		}
+	}
+
+	void ReadFromFile(FILE *in)
+	{
+		for (int i = 0; i < N; i++)
+		{
+			for (int j = 0; j < N; j++)
+			{
+				fscanf(in, "%lf ", &Matrix[i][j]);
+			}
+			//fprintf(out, "\n");
+		}
 	}
 
 };

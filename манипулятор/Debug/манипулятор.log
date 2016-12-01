@@ -1,4 +1,16 @@
 ﻿  main.cpp
-  TModel.cpp
-  Создание кода...
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tmatrix.h(139): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tunit.h(64): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tunit.h(73): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tmodel.h(131): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tmodel.h(144): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tmodel.h(152): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
+c:\users\й\desktop\всё\visual studio\манипулятор — копия\манипулятор\tmodel.h(159): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note:  см. объявление "fscanf"
   манипулятор.vcxproj -> C:\Users\й\Desktop\всё\Visual Studio\манипулятор — копия\Debug\манипулятор.exe
